@@ -25,40 +25,46 @@ const NavBar = () => {
 
   return (
     <nav
-      className="flex justify-between items-center h-16 bg-yellow-50 text-red-600 relative shadow-sm"
+      className="flex justify-between items-center h-14 py-4 bg-yellow-50 text-red-600 relative shadow-sm"
       role="navigation"
     >
       <div>
-        <a href="/" className="text-red-600 inline-block p-4 hover:underline">
+        <a
+          href="/"
+          className="text-red-600 inline-block p-4 hover:bg-yellow-100 transition-all duration-500 ease-in-out"
+        >
           TravelRun
         </a>
       </div>
       <div className="pr-8 absolute inset-y-0 right-0 md:block hidden">
-        <a href="/" className="text-red-600 inline-block p-4 hover:underline">
+        <a
+          href="/"
+          className="text-red-600 inline-block p-4 hover:underline hover:bg-yellow-100 transition-all duration-500 ease-in-out"
+        >
           Home
         </a>
         <a
           href="/features"
-          className="text-red-600 inline-block p-4 hover:underline"
+          className="text-red-600 inline-block p-4 hover:underline hover:bg-yellow-100 transition-all duration-500 ease-in-out"
         >
           Features
         </a>
         <a
           href="/experiences"
-          className="text-red-600 inline-block p-4 hover:underline"
+          className="text-red-600 inline-block p-4 hover:underline hover:bg-yellow-100 transition-all duration-500 ease-in-out"
         >
           Experiences
         </a>
         <a
           href="/contact"
-          className="text-red-600 inline-block p-4 hover:underline"
+          className="text-red-600 inline-block p-4 hover:underline hover:bg-yellow-100 transition-all duration-500 ease-in-out"
         >
           Contact
         </a>
       </div>
 
       <div
-        className="p-4 cursor-pointer absolute inset-y-0 right-0 w-16 md:hidden"
+        className="p-4 cursor-pointer absolute inset-y-0 right-0 w-16 md:hidden hover:bg-yellow-100 transition-all duration-500 ease-in-out"
         onClick={handleMenuClick}
       >
         <svg
