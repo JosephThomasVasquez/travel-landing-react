@@ -31,12 +31,12 @@ const NavBar = () => {
       <div>
         <a
           href="/"
-          className="font-semibold text-2xl text-primary-orange inline-block p-4 hover:bg-yellow-100 transition-all duration-500 ease-in-out"
+          className="font-semibold text-3xl text-primary-orange inline-block ml-10 p-4 hover:bg-yellow-100 transition-all duration-500 ease-in-out"
         >
           TravelRun
         </a>
       </div>
-      <div className="pr-8 absolute inset-y-0 right-0 md:block hidden">
+      <div className="pr-8 mr-10 absolute inset-y-0 right-0 md:block hidden">
         <a
           href="/"
           className="font-semibold text-gray-800 inline-block mt-7 p-2 px-5 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out"
@@ -70,7 +70,7 @@ const NavBar = () => {
       </div>
 
       <div
-        className="p-4 cursor-pointer absolute p-5 inset-y-0 right-0 w-16 md:hidden hover:bg-yellow-100 transition-all duration-500 ease-in-out"
+        className="mt-4 p-4 px-5 cursor-pointer absolute p-5 inset-y-0 right-0 w-16 md:hidden hover:bg-yellow-100 transition-all duration-500 ease-in-out"
         onClick={handleMenuClick}
       >
         <svg
