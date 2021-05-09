@@ -25,13 +25,13 @@ const NavBar = () => {
 
   return (
     <nav
-      className="flex justify-between items-center h-14 py-4 bg-sky-blue text-red-600 relative shadow-sm"
+      className="flex justify-between items-center h-14 py-4 bg-sky-blue text-red-600 relative"
       role="navigation"
     >
       <div>
         <a
           href="/"
-          className="font-semibold text-2xl text-red-600 inline-block p-4 hover:bg-yellow-100 transition-all duration-500 ease-in-out"
+          className="font-semibold text-2xl text-green-500 inline-block p-4 hover:bg-yellow-100 transition-all duration-500 ease-in-out"
         >
           TravelRun
         </a>
