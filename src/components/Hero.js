@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import heroImage from "../images/pexels-artem-beliaikin-2106776.jpg";
+import heroImage from "../images/pexels-artem-beliaikin-2106776_Sky_FadeOut.jpg";
 
 const Hero = () => {
   const [heroImg, setHeroImg] = useState({
