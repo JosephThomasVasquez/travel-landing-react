@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
 
 const NavBar = () => {
@@ -7,6 +7,75 @@ const NavBar = () => {
     open: null,
     menuDisplay: "Menu",
   });
+
+  // Open the Menu
+  const menuShow = (elem1, elem2) => {
+    gsap.from([elem1, elem2], {
+      duration: 0.7,
+      height: 0,
+      transformOrigin: "right top",
+      skewY: 2,
+      ease: "power4.inOut",
+      stagger: {
+        amount: 0.2,
+      },
+    });
+  };
+
+  // Hide the Menu
+  const menuHide = (elem1, elem2) => {
+    gsap.to([elem1, elem2], {
+      duration: 0.8,
+      height: 0,
+      ease: "power4.inOut",
+      stagger: {
+        amount: 0.07,
+      },
+    });
+  };
+
+  // Stagger links from Menu
+  const staggerLinks = (elem1, elem2, elem3, elem4, elem5) => {
+    gsap.from([elem1, elem2, elem3, elem4, elem5], {
+      duration: 0.8,
+      y: 100,
+      delay: 0.1,
+      ease: "power4.inOut",
+      stagger: {
+        amount: 0.3,
+      },
+    });
+  };
+
+  let menuButton = useRef(null);
+  let menuBegin = useRef(null);
+  let menuEnd = useRef(null);
+  let menuLink1 = useRef(null);
+  let menuLink2 = useRef(null);
+  let menuLink3 = useRef(null);
+  let menuLink4 = useRef(null);
+  let menuLink5 = useRef(null);
+
+  useEffect(() => {
+    // If menu initial: false, or if open: false i.e. "null" it will flip to true
+    if (menuState.open === false) {
+      menuHide(menuBegin, menuEnd);
+      gsap.to(menuButton, { duration: 1, css: { display: "none" } });
+    } else if (
+      menuState.open === true ||
+      (menuState.open === true && menuState.initial === null)
+    ) {
+      gsap.to(menuButton, { duration: 0, css: { display: "block" } });
+      //Allow menu to have height of 100%
+      gsap.to([menuBegin, menuEnd], {
+        duration: 0,
+        opacity: 1,
+        height: "100%",
+      });
+      menuShow(menuBegin, menuEnd);
+      staggerLinks(menuLink1, menuLink2, menuLink3, menuLink4, menuLink5);
+    }
+  }, [menuState]);
 
   // Toggle state of the menu
   const handleMenuClick = (e) => {
@@ -73,6 +142,49 @@ const NavBar = () => {
         className="mt-4 p-4 px-5 cursor-pointer absolute p-5 inset-y-0 right-0 w-16 md:hidden hover:bg-yellow-100 transition-all duration-500 ease-in-out"
         onClick={handleMenuClick}
       >
+        <div ref={(el) => (menuButton = el)} className="menu-wrapper">
+          <div ref={(el) => (menuBegin = el)} className="bg-red-500"></div>
+          <div
+            ref={(el) => (menuEnd = el)}
+            className="bg-yellow-100 pr-8 mr-10 absolute inset-y-0 right-0"
+          >
+            <a
+              ref={(el) => (menuLink1 = el)}
+              href="/"
+              className="font-semibold text-gray-800 inline-block mt-7 p-2 px-5 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out"
+            >
+              Home
+            </a>
+            <a
+              ref={(el) => (menuLink2 = el)}
+              href="/features"
+              className="font-semibold text-gray-800 inline-block mt-7 p-2 px-5 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out"
+            >
+              Features
+            </a>
+            <a
+              ref={(el) => (menuLink3 = el)}
+              href="/experiences"
+              className="font-semibold text-gray-800 inline-block mt-7 p-2 px-5 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out"
+            >
+              Experiences
+            </a>
+            <a
+              ref={(el) => (menuLink4 = el)}
+              href="/contact"
+              className="font-semibold text-gray-800 inline-block mt-7 p-2 px-5 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out"
+            >
+              Contact
+            </a>
+            <a
+              ref={(el) => (menuLink5 = el)}
+              href="/contact"
+              className="font-semibold bg-primary-orange text-gray-100 inline-block mt-7 ml-5 p-2 px-5 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out"
+            >
+              Login
+            </a>
+          </div>
+        </div>
         <svg
           className="w-6 h-6"
           fill="none"
