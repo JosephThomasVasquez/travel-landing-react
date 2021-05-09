@@ -9,9 +9,9 @@ const Hero = () => {
   return (
     <div>
       <img src={heroImg.img} alt="" className="static" />
-      <div className="search-packages bg-sky-blue py-8 max-w-5xl relative bottom-32 right-0 h-32 ...">
+      <div className="search-packages flex items-center float-right bg-sky-blue py-8 w-min relative bottom-32 h-32 ...">
         <div className="grid grid-rows-3 grid-flow-col gap-4">
-          <div className="row-span-3 col-span-3 ...">
+          <div className="row-span-3 col-span-3 ... px-8">
             <h2 className="flex items-start">
               Location
               <span>
@@ -33,7 +33,7 @@ const Hero = () => {
             </h2>
             <input type="text" name="location" id="" />
           </div>
-          <div className="row-span-3 col-span-3 ...">
+          <div className="row-span-3 col-span-3 ... px-8">
             <h2 className="flex items-start">
               Date
               <span>
@@ -53,10 +53,16 @@ const Hero = () => {
                 </svg>
               </span>
             </h2>
-            <input type="date" name="location" id="" className="max-w-6/12" />
-            <input type="date" name="location" id="" className="max-w-6/12" />
+            <div className="grid grid-rows-1 grid-flow-col gap-4">
+              <div> Begin: </div>
+              <input type="date" name="location" id="" className="m-auto" />
+            </div>
+            <div className="grid grid-rows-1 grid-flow-col gap-4">
+              <div> End: </div>
+              <input type="date" name="location" id="" className="m-auto" />
+            </div>
           </div>
-          <div className="row-span-3 col-span-3 ... max-w-3/12">
+          <div className="row-span-3 col-span-3 ... px-8 max-w-3/12">
             <h2 className="flex items-start">
               Average Price
               <span>
@@ -78,7 +84,7 @@ const Hero = () => {
             </h2>
             <input type="text" name="location" id="" />
           </div>
-          <div className="row-span-3 col-span-3 ... max-w-3/12">
+          <div className="row-span-3 col-span-3 ... px-8 max-w-3/12">
             <h2 className="text-center bg-primary-orange">Search</h2>
           </div>
         </div>
