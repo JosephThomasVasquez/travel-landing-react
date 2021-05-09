@@ -31,7 +31,7 @@ const NavBar = () => {
       <div>
         <a
           href="/"
-          className="font-semibold text-2xl text-green-500 inline-block p-4 hover:bg-yellow-100 transition-all duration-500 ease-in-out"
+          className="font-semibold text-2xl text-primary-orange inline-block p-4 hover:bg-yellow-100 transition-all duration-500 ease-in-out"
         >
           TravelRun
         </a>
@@ -39,25 +39,25 @@ const NavBar = () => {
       <div className="pr-8 absolute inset-y-0 right-0 md:block hidden">
         <a
           href="/"
-          className="font-semibold text-red-600 inline-block p-4 hover:underline hover:bg-yellow-100 transition-all duration-500 ease-in-out"
+          className="font-semibold text-gray-800 inline-block p-4 hover:underline hover:bg-yellow-100 transition-all duration-500 ease-in-out"
         >
           Home
         </a>
         <a
           href="/features"
-          className="font-semibold text-red-600 inline-block p-4 hover:underline hover:bg-yellow-100 transition-all duration-500 ease-in-out"
+          className="font-semibold text-gray-800 inline-block p-4 hover:underline hover:bg-yellow-100 transition-all duration-500 ease-in-out"
         >
           Features
         </a>
         <a
           href="/experiences"
-          className="font-semibold text-red-600 inline-block p-4 hover:underline hover:bg-yellow-100 transition-all duration-500 ease-in-out"
+          className="font-semibold text-gray-800 inline-block p-4 hover:underline hover:bg-yellow-100 transition-all duration-500 ease-in-out"
         >
           Experiences
         </a>
         <a
           href="/contact"
-          className="font-semibold text-red-600 inline-block p-4 hover:underline hover:bg-yellow-100 transition-all duration-500 ease-in-out"
+          className="font-semibold text-gray-800 inline-block p-4 hover:underline hover:bg-yellow-100 transition-all duration-500 ease-in-out"
         >
           Contact
         </a>
