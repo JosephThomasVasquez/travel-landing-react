@@ -6,7 +6,7 @@ const NavBar = () => {
       className="flex justify-between items-center h-16 bg-yellow-50 text-red-600 relative shadow-sm"
       role="navigation"
     >
-      <div className="pr-8 md:block hidden">
+      <div className="pr-8 absolute inset-y-0 right-0 md:block hidden">
         <a href="/" className="text-red-600 inline-block p-4 hover:underline">
           TravelRun
         </a>
@@ -27,7 +27,7 @@ const NavBar = () => {
           Contact
         </a>
       </div>
-      <div className="pl-4 cursor-pointer flex flex-row space-x-6 md:hidden">
+      <div className="p-4 cursor-pointer absolute inset-y-0 right-0 w-16 md:hidden">
         <svg
           className="w-6 h-6"
           fill="none"
