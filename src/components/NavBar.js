@@ -25,7 +25,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className="flex justify-between items-center h-14 py-4 bg-yellow-50 text-red-600 relative shadow-sm"
+      className="flex justify-between items-center h-14 py-4 bg-sky-blue text-red-600 relative shadow-sm"
       role="navigation"
     >
       <div>
