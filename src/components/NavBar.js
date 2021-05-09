@@ -1,7 +1,13 @@
-import React from "react";
-import gsap from 'gsap';
+import React, { useState } from "react";
+import gsap from "gsap";
 
 const NavBar = () => {
+  const [menuState, setMenuState] = useState({
+    initial: false,
+    open: null,
+    menuDisplay: "Menu",
+  });
+
   return (
     <nav
       className="flex justify-between items-center h-16 bg-yellow-50 text-red-600 relative shadow-sm"
