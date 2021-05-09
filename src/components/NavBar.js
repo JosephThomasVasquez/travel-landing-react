@@ -39,31 +39,31 @@ const NavBar = () => {
       <div className="pr-8 absolute inset-y-0 right-0 md:block hidden">
         <a
           href="/"
-          className="font-semibold text-gray-800 inline-block mt-7 p-2 px-5 hover:shadow-lg hover:bg-primary-orange transition-all duration-500 ease-in-out"
+          className="font-semibold text-gray-800 inline-block mt-7 p-2 px-5 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out"
         >
           Home
         </a>
         <a
           href="/features"
-          className="font-semibold text-gray-800 inline-block mt-7 p-2 px-5 hover:underline hover:bg-yellow-100 transition-all duration-500 ease-in-out"
+          className="font-semibold text-gray-800 inline-block mt-7 p-2 px-5 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out"
         >
           Features
         </a>
         <a
           href="/experiences"
-          className="font-semibold text-gray-800 inline-block mt-7 p-2 px-5 hover:underline hover:bg-yellow-100 transition-all duration-500 ease-in-out"
+          className="font-semibold text-gray-800 inline-block mt-7 p-2 px-5 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out"
         >
           Experiences
         </a>
         <a
           href="/contact"
-          className="font-semibold text-gray-800 inline-block mt-7 p-2 px-5 hover:underline hover:bg-yellow-100 transition-all duration-500 ease-in-out"
+          className="font-semibold text-gray-800 inline-block mt-7 p-2 px-5 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out"
         >
           Contact
         </a>
         <a
           href="/contact"
-          className="font-semibold bg-primary-orange text-gray-100 inline-block mt-7 ml-5 p-2 px-5 hover:underline hover:bg-yellow-100 transition-all duration-500 ease-in-out"
+          className="font-semibold bg-primary-orange text-gray-100 inline-block mt-7 ml-5 p-2 px-5 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out"
         >
           Login
         </a>

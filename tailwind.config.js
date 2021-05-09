@@ -4,8 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        transparent: "transparent",
+        current: "currentColor",
         "sky-blue": "#F5F9FD",
-        "primary-orange": "#FF7424"
+        "primary-orange": "#FF7424",
+        "primary-orange-50": "#ff975c",
       },
     },
   },
