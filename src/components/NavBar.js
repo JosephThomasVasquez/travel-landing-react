@@ -8,6 +8,21 @@ const NavBar = () => {
     menuDisplay: "Menu",
   });
 
+  // Toggle state of the menu
+  const handleMenuClick = (e) => {
+    console.log(e.target);
+
+    // If menu initial: false, or if open: false i.e. "null" it will flip to true
+    if (menuState.initial === false || !menuState.open) {
+      setMenuState({ initial: null, open: true, menuDisplay: "Close" });
+    }
+    // If menu open: true, then flip to false
+    if (menuState.open === true) {
+      setMenuState({ open: !menuState.open, menuDisplay: "Menu" });
+    }
+    console.log("Menu", menuState.open);
+  };
+
   return (
     <nav
       className="flex justify-between items-center h-16 bg-yellow-50 text-red-600 relative shadow-sm"
@@ -34,7 +49,10 @@ const NavBar = () => {
           Contact
         </a>
       </div>
-      <div className="p-4 cursor-pointer absolute inset-y-0 right-0 w-16 md:hidden">
+      <div
+        className="p-4 cursor-pointer absolute inset-y-0 right-0 w-16 md:hidden"
+        onClick={handleMenuClick}
+      >
         <svg
           className="w-6 h-6"
           fill="none"
