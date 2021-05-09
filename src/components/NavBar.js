@@ -28,27 +28,35 @@ const NavBar = () => {
       className="flex justify-between items-center h-16 bg-yellow-50 text-red-600 relative shadow-sm"
       role="navigation"
     >
-      <div className="pr-8 absolute inset-y-0 right-0 md:block hidden">
+      <div>
         <a href="/" className="text-red-600 inline-block p-4 hover:underline">
           TravelRun
         </a>
-
+      </div>
+      <div className="pr-8 absolute inset-y-0 right-0 md:block hidden">
         <a href="/" className="text-red-600 inline-block p-4 hover:underline">
           Home
         </a>
-
-        <a href="/" className="text-red-600 inline-block p-4 hover:underline">
+        <a
+          href="/features"
+          className="text-red-600 inline-block p-4 hover:underline"
+        >
           Features
         </a>
-
-        <a href="/" className="text-red-600 inline-block p-4 hover:underline">
+        <a
+          href="/experiences"
+          className="text-red-600 inline-block p-4 hover:underline"
+        >
           Experiences
         </a>
-
-        <a href="/" className="text-red-600 inline-block p-4 hover:underline">
+        <a
+          href="/contact"
+          className="text-red-600 inline-block p-4 hover:underline"
+        >
           Contact
         </a>
       </div>
+
       <div
         className="p-4 cursor-pointer absolute inset-y-0 right-0 w-16 md:hidden"
         onClick={handleMenuClick}
