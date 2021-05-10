@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/JosephThomasVasquez/travel-landing-react/static/css/main.065f6950.chunk.css",
+    "main.js": "/JosephThomasVasquez/travel-landing-react/static/js/main.a28eb155.chunk.js",
+    "main.js.map": "/JosephThomasVasquez/travel-landing-react/static/js/main.a28eb155.chunk.js.map",
+    "runtime-main.js": "/JosephThomasVasquez/travel-landing-react/static/js/runtime-main.954f97b8.js",
+    "runtime-main.js.map": "/JosephThomasVasquez/travel-landing-react/static/js/runtime-main.954f97b8.js.map",
+    "static/js/2.5794b879.chunk.js": "/JosephThomasVasquez/travel-landing-react/static/js/2.5794b879.chunk.js",
+    "static/js/2.5794b879.chunk.js.map": "/JosephThomasVasquez/travel-landing-react/static/js/2.5794b879.chunk.js.map",
+    "static/js/3.e4c324b9.chunk.js": "/JosephThomasVasquez/travel-landing-react/static/js/3.e4c324b9.chunk.js",
+    "static/js/3.e4c324b9.chunk.js.map": "/JosephThomasVasquez/travel-landing-react/static/js/3.e4c324b9.chunk.js.map",
+    "index.html": "/JosephThomasVasquez/travel-landing-react/index.html",
+    "static/css/main.065f6950.chunk.css.map": "/JosephThomasVasquez/travel-landing-react/static/css/main.065f6950.chunk.css.map",
+    "static/js/2.5794b879.chunk.js.LICENSE.txt": "/JosephThomasVasquez/travel-landing-react/static/js/2.5794b879.chunk.js.LICENSE.txt",
+    "static/media/pexels-artem-beliaikin-2106776_Sky_FadeOut.b3b505a9.jpg": "/JosephThomasVasquez/travel-landing-react/static/media/pexels-artem-beliaikin-2106776_Sky_FadeOut.b3b505a9.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.954f97b8.js",
+    "static/js/2.5794b879.chunk.js",
+    "static/css/main.065f6950.chunk.css",
+    "static/js/main.a28eb155.chunk.js"
+  ]
+}
