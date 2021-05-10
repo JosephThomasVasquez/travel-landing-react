@@ -56,7 +56,6 @@ const NavBar = () => {
   let menuLink5 = useRef(null);
 
   useEffect(() => {
-
     // If menu initial: false, or if open: false i.e. "null" it will flip to true
     if (menuState.open === false || menuState.initial === false) {
       menuHide(menuBegin, menuEnd);
@@ -66,7 +65,6 @@ const NavBar = () => {
         opacity: 1,
         height: "100%",
       });
-
     } else if (
       menuState.open === true ||
       (menuState.open === true && menuState.initial === null)
@@ -85,7 +83,6 @@ const NavBar = () => {
 
   // Toggle state of the menu
   const handleMenuClick = () => {
-
     // If menu initial: false, or if open: false i.e. "null" it will flip to true
     if (menuState.initial === false || !menuState.open) {
       setMenuState({ initial: null, open: true, menuDisplay: "Close" });
@@ -148,7 +145,10 @@ const NavBar = () => {
         onClick={handleMenuClick}
       >
         <div ref={(el) => (menuButton = el)} className="menu-wrapper">
-          <div ref={(el) => (menuBegin = el)} className="bg-red-500 w-full"></div>
+          <div
+            ref={(el) => (menuBegin = el)}
+            className="bg-red-500 w-full"
+          ></div>
           <div
             ref={(el) => (menuEnd = el)}
             className="bg-sky-blue mt-20 absolute inset-y-0 right-0 w-screen"

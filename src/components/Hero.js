@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import heroImage from "../images/pexels-artem-beliaikin-2106776_Resize_03.jpg";
+import DateTimeLine from "./DateTimeLine";
 
 const Hero = () => {
   const [heroImg, setHeroImg] = useState({
@@ -17,6 +18,7 @@ const Hero = () => {
   return (
     <div>
       <img src={heroImg.img} alt="" className="static" />
+      <DateTimeLine />
       <div className="search-packages flex items-center float-right bg-sky-blue py-8 w-max relative bottom-32 h-32 ...">
         <div className="grid grid-rows-3 grid-flow-col gap-4">
           <div className="row-span-3 col-span-3 ... px-8">
