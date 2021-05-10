@@ -18,10 +18,18 @@ const Hero = () => {
   return (
     <div>
       <img src={heroImg.img} alt="" className="static" />
-      <div className="flex items-left ml-24 lg:w-4/6 md:w-6/12 sm:w-6/12 absolute lg:top-48 md:top-40 sm:top-32 h-32 ...">
-        <h1 className="flex font-serif font-bold text-gray-800 lg:text-8xl md:text-6xl sm:text-3xl">
-          Get away for once and see what you're missing!
-        </h1>
+      <div className="flex ml-24 lg:w-4/6 md:w-6/12 sm:w-6/12 absolute lg:top-48 md:top-40 sm:top-32 h-80 ...">
+        <div className="grid grid-cols-1 gap-4">
+          <h1 className="block font-serif font-bold text-gray-800 lg:text-8xl md:text-5xl sm:text-3xl">
+            Get away for once and see what you're missing!
+          </h1>
+          <div className="row-span-1 ...">
+            <div className="mt-10">
+              <i className="fas fa-play text-primary-orange flex items-center justify-center rounded-full bg-sky-blue hover:bg-primary-orange hover:text-sky-blue w-16 h-16  transition-all duration-500 ease-in-out"></i>
+              <div className="font-bold relative bottom-11 left-20">Watch Video</div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <DateTimeLine />
