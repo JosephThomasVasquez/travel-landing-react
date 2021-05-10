@@ -39,7 +39,7 @@ const Hero = () => {
                 </svg>
               </span>
             </h2>
-            <input type="text" name="location" id="" />
+            <input type="text" name="location" id="location" placeholder="Italy" />
           </div>
           <div className="row-span-3 col-span-3 ... px-8">
             <h2 className="flex items-center">
@@ -69,7 +69,6 @@ const Hero = () => {
                 id="begin"
                 className="m-auto"
                 palceholder="2021/5/10"
-                value={dates.begin}
                 onChange={datesHandleChange}
               />
             </div>
@@ -79,7 +78,6 @@ const Hero = () => {
                 type="date"
                 name="end"
                 id="end"
-                value={dates.end}
                 className="m-auto"
                 onChange={datesHandleChange}
               />
@@ -105,7 +103,7 @@ const Hero = () => {
                 </svg>
               </span>
             </h2>
-            <input type="text" name="location" id="" />
+            <input type="text" name="average-price" id="average-price" placeholder="$159 - $299" />
           </div>
           <div className="row-span-3 col-span-3 ... px-8 max-w-3/12">
             <button className="font-semibold bg-primary-orange text-gray-100 inline-block p-6 px-10 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out">
