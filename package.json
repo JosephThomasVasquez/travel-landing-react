@@ -2,6 +2,7 @@
   "name": "travel-landing-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/JosephThomasVasquez/travel-landing-react",
   "dependencies": {
     "@craco/craco": "^6.1.2",
     "@testing-library/jest-dom": "^5.11.4",
