@@ -18,7 +18,14 @@ const Hero = () => {
   return (
     <div>
       <img src={heroImg.img} alt="" className="static" />
+      <div className="flex items-left ml-24 lg:w-4/6 md:w-6/12 sm:w-6/12 absolute lg:top-48 md:top-40 sm:top-32 h-32 ...">
+        <h1 className="flex font-serif font-bold text-gray-800 lg:text-8xl md:text-6xl sm:text-3xl">
+          Get away for once and see what you're missing!
+        </h1>
+      </div>
+
       <DateTimeLine />
+
       <div className="search-packages flex items-center float-right bg-sky-blue py-8 w-max relative bottom-32 h-32 ...">
         <div className="grid grid-rows-3 grid-flow-col gap-4">
           <div className="row-span-3 col-span-3 ... px-8">
@@ -41,7 +48,12 @@ const Hero = () => {
                 </svg>
               </span>
             </h2>
-            <input type="text" name="location" id="location" placeholder="Italy" />
+            <input
+              type="text"
+              name="location"
+              id="location"
+              placeholder="Italy"
+            />
           </div>
           <div className="row-span-3 col-span-3 ... px-8">
             <h2 className="flex items-center">
@@ -105,7 +117,12 @@ const Hero = () => {
                 </svg>
               </span>
             </h2>
-            <input type="text" name="average-price" id="average-price" placeholder="$159 - $299" />
+            <input
+              type="text"
+              name="average-price"
+              id="average-price"
+              placeholder="$159 - $299"
+            />
           </div>
           <div className="row-span-3 col-span-3 ... px-8 max-w-3/12">
             <button className="font-semibold bg-primary-orange text-gray-100 inline-block p-6 px-10 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out">
