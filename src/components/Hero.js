@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import heroImage from "../images/pexels-artem-beliaikin-2106776_Resize_03.jpg";
+import heroImage from "../images/pexels-artem-beliaikin-2106776_Retouch_04.jpg";
 import DateTimeLine from "./DateTimeLine";
 
 const Hero = () => {
