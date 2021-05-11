@@ -6,7 +6,7 @@ const DateTimeLine = () => {
   const handleDateChange = () => {};
 
   return (
-    <div className="flex items-center absolute top-64 right-2">
+    <div className="flex items-center absolute top-64 right-0 mr-8">
       <div className="container w-10">
         
         <div className="font-bold text-2xl text-center text-gray-700 my-6">
