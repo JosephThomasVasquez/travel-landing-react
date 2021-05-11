@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/travel-landing-react/static/css/main.d6c5bf51.chunk.css",
-    "main.js": "/travel-landing-react/static/js/main.b668362c.chunk.js",
-    "main.js.map": "/travel-landing-react/static/js/main.b668362c.chunk.js.map",
+    "main.css": "/travel-landing-react/static/css/main.4bea07fb.chunk.css",
+    "main.js": "/travel-landing-react/static/js/main.d7782110.chunk.js",
+    "main.js.map": "/travel-landing-react/static/js/main.d7782110.chunk.js.map",
     "runtime-main.js": "/travel-landing-react/static/js/runtime-main.96d45d74.js",
     "runtime-main.js.map": "/travel-landing-react/static/js/runtime-main.96d45d74.js.map",
     "static/js/2.5794b879.chunk.js": "/travel-landing-react/static/js/2.5794b879.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.e4c324b9.chunk.js": "/travel-landing-react/static/js/3.e4c324b9.chunk.js",
     "static/js/3.e4c324b9.chunk.js.map": "/travel-landing-react/static/js/3.e4c324b9.chunk.js.map",
     "index.html": "/travel-landing-react/index.html",
-    "static/css/main.d6c5bf51.chunk.css.map": "/travel-landing-react/static/css/main.d6c5bf51.chunk.css.map",
+    "static/css/main.4bea07fb.chunk.css.map": "/travel-landing-react/static/css/main.4bea07fb.chunk.css.map",
     "static/js/2.5794b879.chunk.js.LICENSE.txt": "/travel-landing-react/static/js/2.5794b879.chunk.js.LICENSE.txt",
     "static/media/pexels-artem-beliaikin-2106776_Retouch_04.3a8604d8.jpg": "/travel-landing-react/static/media/pexels-artem-beliaikin-2106776_Retouch_04.3a8604d8.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.96d45d74.js",
     "static/js/2.5794b879.chunk.js",
-    "static/css/main.d6c5bf51.chunk.css",
-    "static/js/main.b668362c.chunk.js"
+    "static/css/main.4bea07fb.chunk.css",
+    "static/js/main.d7782110.chunk.js"
   ]
 }
