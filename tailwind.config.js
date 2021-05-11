@@ -9,6 +9,7 @@ module.exports = {
         "sky-blue": "#F5F9FD",
         "primary-orange": "#FF7424",
         "primary-orange-50": "#ff975c",
+        "primary-orange-100": "#ffece0",
       },
     },
   },

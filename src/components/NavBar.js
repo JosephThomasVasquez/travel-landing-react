@@ -102,7 +102,7 @@ const NavBar = () => {
       <div>
         <a
           href="/"
-          className="font-semibold text-3xl text-primary-orange inline-block ml-10 p-4 hover:bg-yellow-100 transition-all duration-500 ease-in-out"
+          className="rounded font-semibold text-3xl text-primary-orange inline-block ml-10 p-4 hover:bg-primary-orange-100 transition-all duration-500 ease-in-out"
         >
           TravelRun
         </a>
