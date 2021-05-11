@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-    background: #c8daf0;
+    background: #F5F9FD;
+    /* background: #c8daf0; */
 }
 
 .test-colors {
