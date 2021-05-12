@@ -144,47 +144,47 @@ const NavBar = () => {
         className="mt-4 p-4 px-5 cursor-pointer absolute p-5 inset-y-0 right-0 w-16 md:hidden hover:bg-yellow-100 transition-all duration-500 ease-in-out"
         onClick={handleMenuClick}
       >
-        <div ref={(el) => (menuButton = el)} className="menu-wrapper">
+        <div ref={(el) => (menuButton = el)} className="menu-wrapper z-50">
           <div
             ref={(el) => (menuBegin = el)}
             className="bg-red-500 w-full"
           ></div>
           <div
             ref={(el) => (menuEnd = el)}
-            className="bg-sky-blue mt-20 absolute inset-y-0 right-0 w-screen"
+            className="bg-sky-blue mt-20 absolute inset-y-0 right-0 w-screen z-50"
           >
             <a
               ref={(el) => (menuLink1 = el)}
               href="/"
-              className="bg-sky-blue font-semibold text-center text-gray-800 block p-2 px-5 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out"
+              className="bg-sky-blue font-semibold text-center text-gray-800 block p-2 px-5 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out z-50"
             >
               Home
             </a>
             <a
               ref={(el) => (menuLink2 = el)}
               href="/features"
-              className="bg-sky-blue font-semibold text-center text-gray-800 block p-2 px-5 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out"
+              className="bg-sky-blue font-semibold text-center text-gray-800 block p-2 px-5 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out z-50"
             >
               Features
             </a>
             <a
               ref={(el) => (menuLink3 = el)}
               href="/experiences"
-              className="bg-sky-blue font-semibold text-center text-gray-800 block p-2 px-5 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out"
+              className="bg-sky-blue font-semibold text-center text-gray-800 block p-2 px-5 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out z-50"
             >
               Experiences
             </a>
             <a
               ref={(el) => (menuLink4 = el)}
               href="/contact"
-              className="bg-sky-blue font-semibold text-center text-gray-800 block p-2 px-5 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out"
+              className="bg-sky-blue font-semibold text-center text-gray-800 block p-2 px-5 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out z-50"
             >
               Contact
             </a>
             <a
               ref={(el) => (menuLink5 = el)}
               href="/contact"
-              className="bg-sky-blue font-semibold text-center bg-primary-orange text-gray-100 block p-2 px-5 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out"
+              className="bg-sky-blue font-semibold text-center bg-primary-orange text-gray-100 block p-2 px-5 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out z-50"
             >
               Login
             </a>
