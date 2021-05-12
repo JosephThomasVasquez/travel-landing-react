@@ -13,8 +13,8 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="col-start-7 col-end-13 ... bg-primary-orange-100 h-96 p-16">
-          <div className="block font-bold text-gray-700 lg:text-2xl md:text-5xl sm:text-3xl mb-8 pl-8">
+        <div className="md:col-start-7 md:col-end-13 ... sm:col-span-12 bg-primary-orange-100 h-96 p-16">
+          <div className="block font-bold text-gray-700 lg:text-2xl md:text-1xl sm:text-1xl mb-8 pl-8">
             We enjoy creating a variety of destinations and creating experience
             packages so customers can always find something new and exciting or
             just a change of view for relaxation.
