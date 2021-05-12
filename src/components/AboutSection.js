@@ -5,10 +5,10 @@ const AboutSection = () => {
     <section className="">
       <div className="grid grid-rows-2 grid-cols-12 gap-4 w-screen">
         <div className="col-start-1 col-end-7 ... bg-gray-100 h-96 w-half">
-          <div className="block font-mono font-bold text-primary-orange lg:text-2xl md:text-5xl sm:text-3xl mb-8 pl-8">
+          <div className="block font-mono font-bold text-primary-orange lg:text-2xl md:text-5xl sm:text-3xl mb-8 pl-16 ">
             ABOUT US
           </div>
-          <div className="block font-serif font-bold text-gray-800 lg:text-6xl md:text-5xl sm:text-3xl pl-8">
+          <div className="block font-serif font-bold text-gray-800 lg:text-6xl md:text-5xl sm:text-3xl px-16">
             Explore All Corners Of The World With Us
           </div>
         </div>
