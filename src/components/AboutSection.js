@@ -5,8 +5,8 @@ import aboutImage2 from "../images/pexels-te-lensfix-1371360.jpg";
 const AboutSection = () => {
   return (
     <section className="">
-      <div className="grid grid-rows-2 grid-cols-12 gap-4 w-screen">
-        <div className="md:col-start-1 md:col-end-7 sm:col-span-12 ... bg-gray-100 h-96 h-auto">
+      <div className="grid grid-rows-2 grid-cols-12 gap-8 w-screen">
+        <div className="md:col-start-1 md:col-end-7 sm:col-span-12 ... h-96 h-auto">
           <div className="block font-mono font-bold text-primary-orange lg:text-2xl md:text-5xl sm:text-3xl mb-8 pl-16 ">
             ABOUT US
           </div>
