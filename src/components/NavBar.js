@@ -28,7 +28,7 @@ const NavBar = () => {
       height: 0,
       ease: "power4.inOut",
       stagger: {
-        amount: 0.07,
+        amount: 0.25,
       },
     });
   };
@@ -59,12 +59,13 @@ const NavBar = () => {
     // If menu initial: false, or if open: false i.e. "null" it will flip to true
     if (menuState.open === false || menuState.initial === false) {
       menuHide(menuBegin, menuEnd);
-      gsap.to(menuButton, { duration: 0, css: { display: "none" } });
-      gsap.to([menuEnd, menuBegin], {
-        duration: 0,
+      gsap.to(menuButton, { duration: 0.9, css: { display: "none" } });
+      gsap.to([menuBegin, menuEnd], {
+        duration: 1,
         opacity: 1,
         height: "100%",
       });
+      staggerLinks(menuLink1, menuLink2, menuLink3, menuLink4, menuLink5);
     } else if (
       menuState.open === true ||
       (menuState.open === true && menuState.initial === null)
