@@ -141,13 +141,13 @@ const NavBar = () => {
       </div>
 
       <div
-        className="flex items-center justify-center mt-4 px-5 cursor-pointer absolute p5 inset-y-0 right-4 w-16 h-16 md:hidden hover:bg-primary-orange-100 transition-all duration-500 ease-in-out rounded-full shadow"
+        className="flex items-center justify-center mt-4 px-5 cursor-pointer absolute inset-y-0 right-0 w-16 h-16 md:hidden hover:bg-primary-orange-100 transition-all duration-500 ease-in-out rounded-full shadow select-none"
         onClick={handleMenuClick}
       >
-        <div ref={(el) => (menuButton = el)} className="menu-wrapper z-50">
+        <div ref={(el) => (menuButton = el)} className="menu-wrapper bg-sky-blue z-50">
           <div
             ref={(el) => (menuBegin = el)}
-            className="bg-red-500 w-full"
+            className="bg-red-500 w-full h-auto"
           ></div>
           <div
             ref={(el) => (menuEnd = el)}
