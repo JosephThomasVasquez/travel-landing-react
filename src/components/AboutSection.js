@@ -30,15 +30,28 @@ const AboutSection = () => {
 
         <div className="md:col-start-1 md:col-end-7 sm:col-span-12 ...">
           <div className="">
-            <img src={aboutImage1} alt="" />
-          </div>
-        </div>
-
-        <div className="md:col-start-7 md:col-end-13 sm:col-span-12 ...">
-        <div className="">
             <img src={aboutImage2} alt="" />
           </div>
         </div>
+
+        <div className="md:col-start-7 md:col-end-13 sm:col-span-12 ... bg-sky-blue shadow-lg static">
+          <div className="rounded overflow-hidden">
+            <img src={aboutImage1} alt="" className="object-cover" />
+            <div className="relative bottom-32 bg-sky-blue">
+              <div className="flex items-center justify-center font-bold font-serif text-8xl text-primary-orange bg-sky-blue rounded-full relative bottom-12 left-16 pt-6 w-24 h-24 shadow">
+                <div className="mt-4">"</div>
+              </div>
+              <span className="font-bold text-4xl text-gray-700">
+                The Green Mountains
+              </span>
+              <span className="block text-2xl text-gray-700">
+                Explore the land of vast lush greenery and clear skies.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        
       </div>
     </section>
   );
