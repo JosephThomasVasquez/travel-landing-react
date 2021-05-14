@@ -28,10 +28,10 @@ const AboutSection = () => {
           el,
           { x: -500, autoAlpha: 0 },
           {
-            duration: 1,
+            duration: 1.5,
             autoAlpha: 1,
             x: 0,
-            ease: "power2.inOut",
+            ease: "power1.inOut",
             scrollTrigger: {
               id: `section-${index + 1}`,
               trigger: el,
@@ -46,10 +46,10 @@ const AboutSection = () => {
           el,
           { x: 500, autoAlpha: 0 },
           {
-            duration: 1,
+            duration: 1.5,
             autoAlpha: 1,
             x: 0,
-            ease: "power2.inOut",
+            ease: "power1.inOut",
             scrollTrigger: {
               id: `section-${index + 1}`,
               trigger: el,
