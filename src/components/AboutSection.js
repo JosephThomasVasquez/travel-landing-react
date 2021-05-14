@@ -7,15 +7,12 @@ const AboutSection = () => {
   let aboutColumn1 = useRef(null);
 
   // Open the Menu
-  const menuShow = (elem1, elem2) => {
+  const columnLeft = (elem1, elem2) => {
     gsap.from([elem1, elem2], {
       duration: 0.25,
-      height: 0,
-      transformOrigin: "right top",
+      autoAlpha: 0,
       ease: "power4.inOut",
-      stagger: {
-        amount: 0.25,
-      },
+      delay: 1,
     });
   };
 
