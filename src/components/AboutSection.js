@@ -37,7 +37,6 @@ const AboutSection = () => {
               trigger: el,
               start: "top center+=200",
               toggleActions: "play none none reverse",
-              markers: true,
             },
           }
         );
@@ -55,7 +54,6 @@ const AboutSection = () => {
               trigger: el,
               start: "top center+=200",
               toggleActions: "play none none reverse",
-              markers: true,
             },
           }
         );
