@@ -1,12 +1,31 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
+import gsap from "gsap";
 import aboutImage1 from "../images/pexels-archie-binamira-672358.jpg";
 import aboutImage2 from "../images/pexels-te-lensfix-1371360.jpg";
 
 const AboutSection = () => {
+  let aboutColumn1 = useRef(null);
+
+  // Open the Menu
+  const menuShow = (elem1, elem2) => {
+    gsap.from([elem1, elem2], {
+      duration: 0.25,
+      height: 0,
+      transformOrigin: "right top",
+      ease: "power4.inOut",
+      stagger: {
+        amount: 0.25,
+      },
+    });
+  };
+
   return (
     <section className="">
       <div className="grid grid-rows-2 grid-cols-12 gap-8 w-screen">
-        <div className="md:col-start-1 md:col-end-7 sm:col-span-12 ... h-96 h-auto">
+        <div
+          className="md:col-start-1 md:col-end-7 sm:col-span-12 ... h-96 h-auto"
+          ref={(el) => (aboutColumn1 = el)}
+        >
           <div className="block font-mono font-bold text-primary-orange lg:text-2xl md:text-5xl sm:text-3xl mb-8 pl-16 ">
             ABOUT US
           </div>
@@ -50,8 +69,6 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-
-        
       </div>
     </section>
   );
