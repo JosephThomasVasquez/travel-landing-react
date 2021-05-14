@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/travel-landing-react/static/css/main.92d3e90a.chunk.css",
-    "main.js": "/travel-landing-react/static/js/main.398019e8.chunk.js",
-    "main.js.map": "/travel-landing-react/static/js/main.398019e8.chunk.js.map",
-    "runtime-main.js": "/travel-landing-react/static/js/runtime-main.96d45d74.js",
-    "runtime-main.js.map": "/travel-landing-react/static/js/runtime-main.96d45d74.js.map",
-    "static/js/2.5794b879.chunk.js": "/travel-landing-react/static/js/2.5794b879.chunk.js",
-    "static/js/2.5794b879.chunk.js.map": "/travel-landing-react/static/js/2.5794b879.chunk.js.map",
-    "static/js/3.e4c324b9.chunk.js": "/travel-landing-react/static/js/3.e4c324b9.chunk.js",
-    "static/js/3.e4c324b9.chunk.js.map": "/travel-landing-react/static/js/3.e4c324b9.chunk.js.map",
+    "main.js": "/travel-landing-react/static/js/main.a014a6f3.chunk.js",
+    "main.js.map": "/travel-landing-react/static/js/main.a014a6f3.chunk.js.map",
+    "runtime-main.js": "/travel-landing-react/static/js/runtime-main.997d01c9.js",
+    "runtime-main.js.map": "/travel-landing-react/static/js/runtime-main.997d01c9.js.map",
+    "static/js/2.11733570.chunk.js": "/travel-landing-react/static/js/2.11733570.chunk.js",
+    "static/js/2.11733570.chunk.js.map": "/travel-landing-react/static/js/2.11733570.chunk.js.map",
+    "static/js/3.52afce67.chunk.js": "/travel-landing-react/static/js/3.52afce67.chunk.js",
+    "static/js/3.52afce67.chunk.js.map": "/travel-landing-react/static/js/3.52afce67.chunk.js.map",
     "index.html": "/travel-landing-react/index.html",
     "static/css/main.92d3e90a.chunk.css.map": "/travel-landing-react/static/css/main.92d3e90a.chunk.css.map",
-    "static/js/2.5794b879.chunk.js.LICENSE.txt": "/travel-landing-react/static/js/2.5794b879.chunk.js.LICENSE.txt",
+    "static/js/2.11733570.chunk.js.LICENSE.txt": "/travel-landing-react/static/js/2.11733570.chunk.js.LICENSE.txt",
     "static/media/pexels-archie-binamira-672358.9ab4deef.jpg": "/travel-landing-react/static/media/pexels-archie-binamira-672358.9ab4deef.jpg",
     "static/media/pexels-artem-beliaikin-2106776_Retouch_04.3a8604d8.jpg": "/travel-landing-react/static/media/pexels-artem-beliaikin-2106776_Retouch_04.3a8604d8.jpg",
     "static/media/pexels-te-lensfix-1371360.964f4511.jpg": "/travel-landing-react/static/media/pexels-te-lensfix-1371360.964f4511.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.96d45d74.js",
-    "static/js/2.5794b879.chunk.js",
+    "static/js/runtime-main.997d01c9.js",
+    "static/js/2.11733570.chunk.js",
     "static/css/main.92d3e90a.chunk.css",
-    "static/js/main.398019e8.chunk.js"
+    "static/js/main.a014a6f3.chunk.js"
   ]
 }
