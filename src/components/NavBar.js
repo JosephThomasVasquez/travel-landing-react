@@ -24,8 +24,9 @@ const NavBar = () => {
   // Hide the Menu
   const menuHide = (elem1, elem2) => {
     gsap.to([elem1, elem2], {
-      duration: 0.25,
+      duration: 0.5,
       height: 0,
+      opacity: 0,
       ease: "power4.inOut",
       stagger: {
         amount: 0.25,
@@ -37,7 +38,7 @@ const NavBar = () => {
   const staggerLinks = (elem1, elem2, elem3, elem4, elem5) => {
     gsap.from([elem1, elem2, elem3, elem4, elem5], {
       duration: 0.15,
-      y: 100,
+      y: 200,
       delay: 0.25,
       ease: "power4.inOut",
       stagger: {
@@ -58,13 +59,13 @@ const NavBar = () => {
   useEffect(() => {
     // If menu initial: false, or if open: false i.e. "null" it will flip to true
     if (menuState.open === false || menuState.initial === false) {
-      menuHide(menuBegin, menuEnd);
-      gsap.to(menuButton, { duration: 0.9, css: { display: "none" } });
-      gsap.to([menuBegin, menuEnd], {
-        duration: 1,
-        opacity: 1,
-        height: "100%",
-      });
+      menuHide(menuEnd, menuBegin);
+      gsap.to(menuButton, { duration: 1, css: { display: "none" } });
+      // gsap.to([menuBegin, menuEnd], {
+      //   duration: 1,
+      //   opacity: 0,
+      //   height: "100%",
+      // });
       staggerLinks(menuLink1, menuLink2, menuLink3, menuLink4, menuLink5);
     } else if (
       menuState.open === true ||
@@ -145,7 +146,10 @@ const NavBar = () => {
         className="flex items-center justify-center mt-4 px-5 cursor-pointer absolute inset-y-0 right-0 w-16 h-16 md:hidden hover:bg-primary-orange-100 transition-all duration-500 ease-in-out rounded-full shadow select-none"
         onClick={handleMenuClick}
       >
-        <div ref={(el) => (menuButton = el)} className="menu-wrapper bg-sky-blue z-50">
+        <div
+          ref={(el) => (menuButton = el)}
+          className="menu-wrapper bg-sky-blue z-50"
+        >
           <div
             ref={(el) => (menuBegin = el)}
             className="bg-red-500 w-full h-auto"

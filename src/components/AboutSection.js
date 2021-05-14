@@ -35,7 +35,7 @@ const AboutSection = () => {
             scrollTrigger: {
               id: `section-${index + 1}`,
               trigger: el,
-              start: "top center+=200",
+              start: "top center+=300",
               toggleActions: "play none none reverse",
             },
           }
@@ -52,7 +52,7 @@ const AboutSection = () => {
             scrollTrigger: {
               id: `section-${index + 1}`,
               trigger: el,
-              start: "top center+=200",
+              start: "top center+=300",
               toggleActions: "play none none reverse",
             },
           }
