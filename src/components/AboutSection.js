@@ -1,12 +1,15 @@
 import React, { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import aboutImage1 from "../images/pexels-archie-binamira-672358.jpg";
 import aboutImage2 from "../images/pexels-te-lensfix-1371360.jpg";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const AboutSection = () => {
+
   let aboutColumn1 = useRef(null);
 
-  // Open the Menu
   const columnLeft = (elem1, elem2) => {
     gsap.from([elem1, elem2], {
       duration: 0.25,
@@ -15,6 +18,10 @@ const AboutSection = () => {
       delay: 1,
     });
   };
+
+  useEffect(() => {
+    // columnLeft();
+  }, []);
 
   return (
     <section className="">
