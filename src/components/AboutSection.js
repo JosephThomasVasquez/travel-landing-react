@@ -7,20 +7,39 @@ import aboutImage2 from "../images/pexels-te-lensfix-1371360.jpg";
 gsap.registerPlugin(ScrollTrigger);
 
 const AboutSection = () => {
-
   let aboutColumn1 = useRef(null);
+  let aboutColumn2 = useRef(null);
 
-  const columnLeft = (elem1, elem2) => {
-    gsap.from([elem1, elem2], {
-      duration: 0.25,
-      autoAlpha: 0,
-      ease: "power4.inOut",
-      delay: 1,
-    });
+  const revealSections = useRef([]);
+  revealSections.current = [];
+
+  const addRefs = (el) => {
+    if (el && !revealSections.current.includes(el)) {
+      revealSections.current.push(el);
+    }
+    console.log(revealSections.current);
+    console.log(aboutColumn1);
   };
 
   useEffect(() => {
-    // columnLeft();
+    revealSections.current.forEach((el, index) => {
+      gsap.fromTo(
+        el,
+        { autoAlpha: 0 },
+        {
+          duration: 1,
+          autoAlpha: 1,
+          ease: "power2.inOut",
+          scrollTrigger: {
+            id: `section-${index + 1}`,
+            trigger: el,
+            start: "top center+=150",
+            toggleActions: "play none none reverse",
+            markers: true,
+          },
+        }
+      );
+    });
   }, []);
 
   return (
@@ -28,7 +47,7 @@ const AboutSection = () => {
       <div className="grid grid-rows-2 grid-cols-12 gap-8 w-screen">
         <div
           className="md:col-start-1 md:col-end-7 sm:col-span-12 ... h-96 h-auto"
-          ref={(el) => (aboutColumn1 = el)}
+          ref={addRefs}
         >
           <div className="block font-mono font-bold text-primary-orange lg:text-2xl md:text-5xl sm:text-3xl mb-8 pl-16 ">
             ABOUT US
@@ -38,7 +57,10 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="md:col-start-7 md:col-end-13 sm:col-span-12 ... bg-primary-orange-100 h-96 p-16 h-auto">
+        <div
+          className="md:col-start-7 md:col-end-13 sm:col-span-12 ... bg-primary-orange-100 h-96 p-16 h-auto"
+          ref={addRefs}
+        >
           <div className="block font-bold text-gray-700 lg:text-2xl md:text-1xl sm:text-1xl mb-8 pl-8">
             We enjoy creating a variety of destinations and creating experience
             packages so customers can always find something new and exciting or
@@ -51,13 +73,19 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="md:col-start-1 md:col-end-7 sm:col-span-12 ...">
+        <div
+          className="md:col-start-1 md:col-end-7 sm:col-span-12 ..."
+          ref={addRefs}
+        >
           <div className="">
             <img src={aboutImage2} alt="" />
           </div>
         </div>
 
-        <div className="md:col-start-7 md:col-end-13 sm:col-span-12 ... bg-sky-blue shadow-lg static">
+        <div
+          className="md:col-start-7 md:col-end-13 sm:col-span-12 ... bg-sky-blue shadow-lg static"
+          ref={addRefs}
+        >
           <div className="rounded overflow-hidden">
             <img src={aboutImage1} alt="" className="object-cover" />
             <div className="relative bottom-32 bg-sky-blue">
