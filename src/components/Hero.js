@@ -34,9 +34,9 @@ const Hero = () => {
 
       <DateTimeLine />
 
-      <div className="search-packages flex items-center float-right bg-sky-blue py-8 lg:w-max relative bottom-32 h-32">
-        <div className="grid grid-rows-3 grid-flow-col gap-4">
-          <div className="row-span-3 col-span-1 ... px-8">
+      <div className="search-packages flex items-center float-right bg-sky-blue py-8 lg:w-max relative bottom-32 h-auto">
+        <div className="flex flex-wrap overflow-hidden">
+          <div className="my-3 px-8 w-1/4 overflow-hidden sm:w-full md:w-full lg:w-1/4">
             <h2 className="flex items-center">
               Location
               <span>
@@ -63,7 +63,7 @@ const Hero = () => {
               placeholder="Italy"
             />
           </div>
-          <div className="row-span-3 col-span-3 ... px-8">
+          <div className="my-3 px-8 w-1/4 overflow-hidden sm:w-full md:w-full lg:w-1/4">
             <h2 className="flex items-center">
               Date
               <span>
@@ -89,7 +89,7 @@ const Hero = () => {
                 type="date"
                 name="begin"
                 id="begin"
-                className="m-auto"
+                className="m-auto text-sm"
                 palceholder="2021/5/10"
                 onChange={datesHandleChange}
               />
@@ -100,12 +100,12 @@ const Hero = () => {
                 type="date"
                 name="end"
                 id="end"
-                className="m-auto"
+                className="m-auto text-sm"
                 onChange={datesHandleChange}
               />
             </div>
           </div>
-          <div className="row-span-3 col-span-3 ... px-8 max-w-3/12">
+          <div className="my-3 px-8 w-1/4 overflow-hidden sm:w-full md:w-full lg:w-1/4">
             <h2 className="flex items-center">
               Average Price
               <span>
@@ -132,7 +132,7 @@ const Hero = () => {
               placeholder="$159 - $299"
             />
           </div>
-          <div className="row-span-3 col-span-3 ... px-8 max-w-3/12">
+          <div className="my-3 px-8 w-1/4 overflow-hidden sm:w-full md:w-full lg:w-1/4">
             <button className="font-semibold bg-primary-orange text-gray-100 inline-block p-6 px-10 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out">
               Search
             </button>
