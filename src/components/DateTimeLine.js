@@ -9,23 +9,23 @@ const DateTimeLine = () => {
     <div className="flex items-center absolute top-64 right-0 mr-8">
       <div className="container w-10">
         
-        <div className="font-bold text-2xl text-center text-gray-700 my-6">
+        <div className="font-bold text-2xl text-center text-gray-700 my-6 transform hover:scale-150 transition-all duration-250 ease-in-out">
           01
         </div>
         
-        <div className="bg-gray-700 w-3 h-3 rounded-full mx-auto my-6"></div>
+        <div className="bg-gray-700 w-3 h-3 rounded-full mx-auto my-6 transform hover:scale-150 transition-all duration-250 ease-in-out"></div>
         
-        <div className="bg-primary-orange w-3 h-3 rounded-full mx-auto my-6"></div>
+        <div className="bg-primary-orange w-3 h-3 rounded-full mx-auto my-6 transform hover:scale-150 transition-all duration-250 ease-in-out"></div>
         
-        <div className="bg-gray-700 w-3 h-3 rounded-full mx-auto my-6"></div>
+        <div className="bg-gray-700 w-3 h-3 rounded-full mx-auto my-6 transform hover:scale-150 transition-all duration-250 ease-in-out"></div>
         
-        <div className="font-bold text-2xl text-center text-gray-700 mt-6 mb-12">
+        <div className="font-bold text-2xl text-center text-gray-700 mt-6 mb-12 transform hover:scale-150 transition-all duration-250 ease-in-out">
           05
         </div>
 
         <div className="">
           <svg
-            className="w-6 h-6 mx-auto text-gray-700"
+            className="w-6 h-6 mx-auto text-gray-700 transform hover:scale-150 transition-all duration-250 ease-in-out"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -42,7 +42,7 @@ const DateTimeLine = () => {
 
         <div className="">
           <svg
-            className="w-6 h-6 mx-auto text-gray-700"
+            className="w-6 h-6 mx-auto text-gray-700 transform hover:scale-150 transition-all duration-250 ease-in-out"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

@@ -34,9 +34,9 @@ const Hero = () => {
 
       <DateTimeLine />
 
-      <div className="search-packages flex items-center float-right bg-sky-blue py-8 w-max relative bottom-32 h-32 ...">
+      <div className="search-packages flex items-center float-right bg-sky-blue py-8 lg:w-max relative bottom-32 h-32">
         <div className="grid grid-rows-3 grid-flow-col gap-4">
-          <div className="row-span-3 col-span-3 ... px-8">
+          <div className="row-span-3 col-span-1 ... px-8">
             <h2 className="flex items-center">
               Location
               <span>
