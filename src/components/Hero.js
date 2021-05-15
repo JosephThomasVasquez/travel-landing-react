@@ -18,15 +18,17 @@ const Hero = () => {
   return (
     <div>
       <img src={heroImg.img} alt="" className="static" />
-      <div className="flex ml-24 lg:w-4/6 md:w-6/12 sm:w-6/12 absolute lg:top-48 md:top-40 sm:top-32 h-80 ...">
+      <div className="flex ml-24 lg:w-4/6 md:w-6/12 xs:w-6/12 absolute lg:top-48 md:top-40 xs:top-32 h-80 ...">
         <div className="grid grid-cols-1 gap-4">
-          <h1 className="block font-serif font-bold text-gray-800 lg:text-7xl md:text-5xl sm:text-3xl h-48">
+          <h1 className="block font-serif font-bold text-gray-800 lg:text-7xl md:text-5xl xs:text-3xl h-48">
             Get away for once and see what you're missing!
           </h1>
           <div className="row-span-1 ...">
-            <div className="lg:mt-10 sm:mt-1">
+            <div className="lg:mt-10 xs:mt-1">
               <i className="fas fa-play text-primary-orange flex items-center justify-center rounded-full bg-sky-blue hover:bg-primary-orange hover:text-sky-blue w-16 h-16  transition-all duration-500 ease-in-out"></i>
-              <div className="font-bold relative bottom-11 left-20">Watch Video</div>
+              <div className="font-bold relative bottom-11 left-20">
+                Watch Video
+              </div>
             </div>
           </div>
         </div>
@@ -36,7 +38,7 @@ const Hero = () => {
 
       <div className="search-packages flex items-center float-right bg-sky-blue py-8 lg:w-max relative bottom-32 h-auto">
         <div className="flex flex-wrap overflow-hidden">
-          <div className="my-3 px-8 w-1/4 overflow-hidden sm:w-full md:w-full lg:w-1/4">
+          <div className="my-3 px-8 w-1/4 overflow-hidden xs:w-full md:w-full lg:w-1/4">
             <h2 className="flex items-center">
               Location
               <span>
@@ -63,7 +65,7 @@ const Hero = () => {
               placeholder="Italy"
             />
           </div>
-          <div className="my-3 px-8 w-1/4 overflow-hidden sm:w-full md:w-full lg:w-1/4">
+          <div className="my-3 px-8 w-1/4 overflow-hidden xs:w-full md:w-full lg:w-1/4">
             <h2 className="flex items-center">
               Date
               <span>
@@ -89,7 +91,7 @@ const Hero = () => {
                 type="date"
                 name="begin"
                 id="begin"
-                className="m-auto text-sm"
+                className="m-auto text-xs"
                 palceholder="2021/5/10"
                 onChange={datesHandleChange}
               />
@@ -100,12 +102,12 @@ const Hero = () => {
                 type="date"
                 name="end"
                 id="end"
-                className="m-auto text-sm"
+                className="m-auto text-xs"
                 onChange={datesHandleChange}
               />
             </div>
           </div>
-          <div className="my-3 px-8 w-1/4 overflow-hidden sm:w-full md:w-full lg:w-1/4">
+          <div className="my-3 px-8 w-1/4 overflow-hidden xs:w-full md:w-full lg:w-1/4">
             <h2 className="flex items-center">
               Average Price
               <span>
@@ -132,7 +134,7 @@ const Hero = () => {
               placeholder="$159 - $299"
             />
           </div>
-          <div className="my-3 px-8 w-1/4 overflow-hidden sm:w-full md:w-full lg:w-1/4">
+          <div className="my-3 px-8 w-1/4 overflow-hidden xs:w-full md:w-full lg:w-1/4">
             <button className="font-semibold bg-primary-orange text-gray-100 inline-block p-6 px-10 hover:shadow-lg hover:bg-primary-orange-50 hover:text-gray-100 transition-all duration-500 ease-in-out">
               Search
             </button>
