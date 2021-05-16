@@ -62,7 +62,7 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section className="">
+    <section className="pb-48">
       <div className="grid grid-rows-2 grid-cols-12 gap-8 w-screen">
         <div
           className="md:col-start-1 md:col-end-7 xs:col-span-12 ... h-96 h-auto"
