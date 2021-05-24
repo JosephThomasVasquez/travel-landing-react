@@ -25,7 +25,7 @@ const Hero = () => {
           </h1>
           <div className="row-span-1 ...">
             <div className="lg:mt-10 xs:mt-1">
-              <i className="fas fa-play text-primary-orange flex items-center justify-center rounded-full bg-sky-blue hover:bg-primary-orange hover:text-sky-blue w-16 h-16  transition-all duration-500 ease-in-out"></i>
+              <i className="fas fa-play text-primary-orange flex items-center justify-center rounded-full shadow-md bg-sky-blue hover:bg-primary-orange hover:text-sky-blue w-16 h-16  transition-all duration-500 ease-in-out"></i>
               <div className="font-bold relative bottom-11 left-20">
                 Watch Video
               </div>
